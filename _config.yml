@@ -2,8 +2,9 @@
 title: Ensemble
 email: contact@mirador-project.com
 description: My own jekyll starter
-baseurl: "/jekyll-starter" # the subpath of your site, e.g. /blog
-url: "https://clairezed.github.io" # the base hostname & protocol for your site
+# baseurl: "/jekyll-starter" # the subpath of your site, e.g. /blog
+url: "http://ensemble-landing.netlify.com" # the base hostname & protocol for your site
+# url: "https://www.ensemble-app.fr" # the base hostname & protocol for your site
 
 # Social settings ------------------------------------
 github_username: clairezed
