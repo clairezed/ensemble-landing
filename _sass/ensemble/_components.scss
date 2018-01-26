@@ -39,7 +39,7 @@
   *
   * ------------------------------------------------------------------- */
 .description {
-  margin: 6rem auto 5rem;
+  margin: 6rem auto;
   h1 {
     font-size: 4rem;
     font-weight: bold;
@@ -50,6 +50,16 @@
   }
 }
 
+@include media-query($on-smartphone){
+  .description  {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+}
 
 /* ===================================================================
  * Formulaire de recolte d'email
