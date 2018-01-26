@@ -1,46 +1,48 @@
-<footer class="site-footer">
+<footer class="footer">
 
-  <div class="wrapper">
+ <div class="social-wrap">
+   <div class="wrapper">
+     <div class="row">
+        <div class="col">
+          <ul class="footer-social-list">
+            {% if site.facebook_username %}
+             <li><a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank">
+               <i class="fa fa-facebook"></i><span>Facebook</span>
+             </a></li>
+             {% endif %}
+             <li><a href="mailto:contact@ensemble-app.fr" target="_blank">
+               <i class="fa fa-envelope"></i><span>Contact</span>
+             </a></li>
+             <!-- <li><a href="#">
+                 <i class="fa fa-twitter"></i><span>Twitter</span>
+             </a></li>
+             <li><a href="#">
+                 <i class="fa fa-pinterest"></i><span>Pinterest</span>
+             </a></li>
+             <li><a href="#">
+                 <i class="fa fa-instagram"></i><span>Instagram</span>
+             </a></li>
+             <li><a href="#">
+                 <i class="fa fa-dribbble"></i><span>Dribbble</span>
+             </a></li> -->
+          </ul>
+        </div>
+        <div class="col">
+          <p> Un projet de <a href="http://www.project-mirador.org/" target="_blank">
+            Mirador</a>
+          </p>
+        </div>
+     </div>
+   </div> <!-- /row -->
+ </div> <!-- /social-wrap -->
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
-    </div>
-
-  </div>
+<!--
+ <div class="back-to-top">
+   <a href="#top" class="smoothscroll"><span>Back to Top</span></a>
+ </div> -->
 
 </footer>
+
+<!-- Scripts -->
+<script src="{{ "/assets/js/jquery.min.js" | absolute_url }}"></script>
+<script src="{{ "/assets/js/main.js" | absolute_url }}"></script>

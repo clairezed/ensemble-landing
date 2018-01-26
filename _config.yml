@@ -1,6 +1,6 @@
 # Site settings -----------------------------------
-title: Starter
-email: clairezuliani@gmail.com
+title: Ensemble
+email: contact@mirador-project.com
 description: My own jekyll starter
 baseurl: "/jekyll-starter" # the subpath of your site, e.g. /blog
 url: "https://clairezed.github.io" # the base hostname & protocol for your site
@@ -8,6 +8,7 @@ url: "https://clairezed.github.io" # the base hostname & protocol for your site
 # Social settings ------------------------------------
 github_username: clairezed
 twitter_username: ZooletteDesBois
+facebook_username: partageonsnosmondes
 
 # Build settings --------------------------------------
 markdown: kramdown

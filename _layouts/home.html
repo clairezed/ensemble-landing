@@ -2,25 +2,52 @@
 layout: default
 ---
 
-<div class="home">
+<main class="home-static" aria-label="Content">
+  <div class="wrapper">
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
+    <!-- <section class="countdown">
+      <div id="counter">
+        <div class="half">
+          <span>334 <sup>days</sup></span>
+          <span>23 <sup>hours</sup></span>
+        </div>
+        <div class="half">
+          <span>50 <sup>mins</sup></span>
+          <span>33 <sup>secs</sup></span>
+        </div>
+      </div>
+    </section> -->
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <section class="description">
+      <div class="main-text">
+        <h1>ensemble. </h1>
+        <p>
+            Le nouveau site internet pour partager nos mondes.
+        </p>
+      </div>
+    </section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <section class="contact-form">
+      <div class="inline-form">
+    		<p>Vous voulez-être tenu informé du lancement d'ensemble ?</p>
+    		<form name="mailing-list" data-is-form='ajax' netlify>
+    			<div>
+    				<label>E-mail</label>
+    			</div>
+    				<div class='input'>
+    				<input type="email" name="email" class="formatted-input">
+    			</div>
+    				<div>
+    				<button type="submit">Envoyer</button>
+    			</div>
+    		</form>
+    		<div class="form-result" data-is-result-form='ajax' style="display: none;" >
+    			<h4>Merci ! </h4>
+    			<p>Votre adresse mail a bien été envoyée, nous reviendrons vers vous rapidement.
+    			<br>Bonne suite de lecture !</p>
+    		</div>
+    	</div>
+    </section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
-</div>
+  </div>
+</main>
